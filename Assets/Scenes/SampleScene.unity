@@ -1286,6 +1286,7 @@ GameObject:
   - component: {fileID: 2049592002}
   - component: {fileID: 2049592003}
   - component: {fileID: 2049592004}
+  - component: {fileID: 2049592005}
   m_Layer: 0
   m_Name: Logic Controller
   m_TagString: Untagged
@@ -1336,6 +1337,19 @@ MonoBehaviour:
   selectObjectToPlace: {fileID: 6388763488137629708, guid: 24e9134389ea3412bbd80de3acba8a50, type: 3}
   buttonContainer: {fileID: 169137201}
   objectToPlaces: []
+--- !u!114 &2049592005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049592000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d664cbe0a5b4433eabe152d83b6f273, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deeplinkURL: 
 --- !u!1 &2098402641
 GameObject:
   m_ObjectHideFlags: 0
