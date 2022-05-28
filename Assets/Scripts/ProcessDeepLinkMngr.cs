@@ -21,11 +21,11 @@ public class ProcessDeepLinkMngr : MonoBehaviour
             else
             {
                 // Initialize DeepLink Manager global variable.
-                deeplinkURL = "[none]"; 
+                deeplinkURL = "[none]";
             }
-        }
 
-        DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     private void onDeepLinkActivated(string url)
@@ -33,7 +33,7 @@ public class ProcessDeepLinkMngr : MonoBehaviour
         // Update DeepLink Manager global variable, so URL can be accessed from anywhere.
         deeplinkURL = url;
 
-        // Decode the URL to determine action. 
+        // Decode the URL to determine action.
         // Tthe app expects a link formatted like this: "unitydl://lori?SampleScene"
         string sceneName = url.Split("?"[0])[1];
         bool validScene;

@@ -97,7 +97,7 @@ public class DoubleTapToPlaceObject : MonoBehaviour
         }
         else
         {
-            placementIndicator.SetActive(false);
+            if (placementIndicator != null) placementIndicator.SetActive(false);
         }
     }
 
